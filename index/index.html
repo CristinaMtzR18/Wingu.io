@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Sección de los metadatos, credencial de identificación de la página web para Internet-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+    <!--Icono de la pestaña del navegador-->
+    <link rel="icon" type="image/ico" href="..\index\images\donacion.png">
+    <!--Título de la página web-->
+    <title>¡Ayuda a cambiar vidas!</title>
+
+    <!--Enlace a la hoja de estilos externa-->
+    <link rel="stylesheet" href="..\index\css\styles.css" />
+
+    <!--Enlace a Bootstrap versión 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <!--Enlace a Bootstrap versión 4.3.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <div class="h1-container">
+                        <div class="title">
+                            <h1>¡Ayuda a cambiar vidas!</h1>
+                        </div>
+                    </div>
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        <input type="hidden" name="oid" value="00D8b0000032CoL" />
+                        <input type="hidden" name="retURL" value="/index/thank_you.html" />
+                        <!-- Información del donante -->
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="first_name" class="form-label">Nombre:</label>
+                                <input type="text" id="first_name" name="first_name" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="last_name" class="form-label">Apellido:</label>
+                                <input type="text" id="last_name" name="last_name" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="company" class="form-label">Ocupación:</label>
+                                <input type="company" id="company" name="company" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="mobile" class="form-label">Número celular:</label>
+                                <input type="mobile" id="mobile" name="mobile" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="country" class="form-label">Pais:</label>
+                                <input type="text" id="country" name="country" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="city" class="form-label">Ciudad:</label>
+                                <input type="text" id="city" name="city" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="state" class="form-label">Estado / Departamento:</label>
+                                <input type="text" id="state" name="state" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="street" class="form-label">Dirección:</label>
+                                <textarea id="street" name="street" class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="paymentType" class="form-label">Tipo de suscripción:</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="00N8b00000IERU1"
+                                        id="00N8b00000IERU1" value="Suscripcion" required>
+                                    <label class="form-check-label" for="subscriptionRadio">Suscripcion</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="00N8b00000IERU1"
+                                        id="00N8b00000IERU1" value="Unica donacion" required>
+                                    <label class="form-check-label" for="donationRadio">Unica donación</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="Transportation" class="form-label">Método de entrega:</label>
+                                <select id="00N8b00000IERTI" name="00N8b00000IERTI" class="form-control"
+                                    aria-label="Default select example" required>
+                                    <option value="">Seleccione tipo de entrega:</option>
+                                    <option value="A traves de wingu">A traves de Wingu</option>
+                                    <option value="A traves de de la Fundacion">A traves de de la Fundación</option>
+                                    <option value="De forma personal">De forma personal</option>
+                                    <option value="Correo/Encomienda">Correo/Encomienda</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="methodOfData" class="form-label">Método de comunicación:</label>
+                                <select id="00N8b00000IERTw" name="00N8b00000IERTw" class="form-control"
+                                    aria-label="Default select example" required>
+                                    <option value="">Seleccione tipo de entrega:</option>
+                                    <option value="Llamada celular">Llamada célular</option>
+                                    <option value="Email">Email</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Videollamada">Videollamada</option>
+                                    <option value="En persona">En persona</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="street" class="form-label">Fecha de entrega:</label><br>
+                                <span class="dateInput dateOnlyInput">
+                                    <input id="00N8b00000IERSj" name="00N8b00000IERSj" type="date" />
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Información adicional -->
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="additional-info" class="form-label">Tipo de donación:</label>
+                                <select id="00N8b00000Ial2u" name="00N8b00000Ial2u" class="form-control"
+                                    aria-label="Default select example" required>
+                                    <option value="">Seleccione:</option>
+                                    <option value="Food">Dinero</option>
+                                    <option value="Food">Comida</option>
+                                    <option value="Clothes">Ropa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Comentarios o sugerencias -->
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="00N8b00000IERQO" class="form-label">Campaña:</label>
+                                <p>Selecccione campaña a donar:</p>
+                                <select id="00N8b00000IERQO" multiple="multiple" name="00N8b00000IERQO"
+                                    class="form-control" aria-label="Default select example" required>
+                                    <option value="Children">Niños</option>
+                                    <option value="Education">Educación</option>
+                                    <option value="Environment">Medioambiente</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="description" class="form-label">Comentario o mensaje:</label>
+                                <textarea id="description" name="description" class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <!-- Terminos y condiciones -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" id="terms" name="terms" class="form-check-input" required />
+                                    <label for="terms" class="form-check-label">He leído y estoy deacuerdo con los
+                                        terminos y condiciones.
+                                        <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                            data-bs-target="#termsModal">Términos y condiciones</button>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botón de enviar -->
+                        <div class="mb-3">
+                            <input type="submit" name="submit" class="btn btn-primary" value="Súmate!"
+                                href="..\index\thank_you.html" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Carrusel-->
+            <div class="col-md-6 pd5">
+                <div id="myCarousel" class="carousel slide d-none d-md-block" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Imagenes -->
+                    <div class="carousel-inner mmg5">
+                        <div class="carousel-item active">
+                            <img src="..\index\images\carrusel\home-1-1.png" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\index\images\carrusel\wingu-home-2.png" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\index\images\carrusel\wingu-home-3.png" alt="Imagen 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de los terminos y condiciones -->
+            <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termsModalLabel">Términos y condiciones</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Agregar terminos y condiciones -->
+                            <h3>Términos y condiciones para el formulario de donación en línea</h3>
+                            <br>
+                            <p>Gracias por considerar realizar una donación a través de nuestro formulario en línea. 
+                                Antes de continuar, tómese un momento para revisar los siguientes términos y condiciones
+                                que rigen el uso de nuestro formulario de donación en línea. Al utilizar el formulario y 
+                                realizar una donación, usted acepta estar sujeto a estos términos y condiciones.</p>
+                            <h3>1. Proceso de donación </h3>
+                            <br>
+                            <p>1.1 Al enviar una donación a través de nuestro formulario en línea, 
+                                confirma que los fondos donados son suyos y que tiene el derecho legal 
+                                de realizar la donación. </p>
+                            <p>1.2 Reconoce y acepta que todas las donaciones son voluntarias y no reembolsables. 
+                              Una vez realizada una donación, no se puede revertir ni reembolsar.</p>
+                            <p>1.3 Nos reservamos el derecho de rechazar o cancelar cualquier donación a nuestra 
+                              discreción, sin proporcionar un motivo. En tales casos, cualquier monto de donación 
+                              recibido será reembolsado al donante. 1.4 Todas las donaciones realizadas a través 
+                              del formulario en línea están sujetas a verificación y validación. Es posible que nos
+                              comuniquemos con usted para obtener información adicional o aclaraciones sobre su donación.</p>
+                            <br>
+                            <br>
+                            <h3>2. Información personal</h3>
+                            <br> 2.1 When making a donation through the web form, you will be required to provide
+                            certain personal
+                            information, including your name, contact details, and payment information. You agree that
+                            all information
+                            provided is accurate, complete, and up-to-date. 2.2 We respect your privacy and will handle
+                            your personal
+                            information in accordance with our Privacy Policy. By using the web form and making a
+                            donation, you consent
+                            to the collection, use, and disclosure of your personal information as outlined in our
+                            Privacy Policy. <br>
+                            <br>
+                            <h3>3. Security </h3>
+                            <br> 3.1 We take the security of your personal information seriously and employ
+                            industry-standard measures
+                            to protect it. However, please be aware that no method of transmission over the internet or
+                            electronic
+                            storage is entirely secure, and we cannot guarantee absolute security. 3.2 You are solely
+                            responsible for
+                            maintaining the confidentiality of your login credentials, if applicable, and for all
+                            activities that occur
+                            under your account. <br>
+                            <br>
+                            <h3>4. Intellectual Property </h3>
+                            <br> 4.1 All content and materials provided on the web form, including but not limited to
+                            text, graphics,
+                            logos, and images, are protected by intellectual property laws and belong to us or our
+                            licensors. You may
+                            not use, reproduce, modify, or distribute any content from the web form without our prior
+                            written consent.
+                            <br>
+                            <br>
+                            <h3>5. Limitation of Liability </h3>
+                            <br> 5.1 In no event shall we be liable for any direct, indirect, incidental, consequential,
+                            or punitive
+                            damages arising out of or in connection with your use of the web form or any donations made
+                            through it. 5.2
+                            We do not warrant the accuracy, completeness, or reliability of any information provided
+                            through the web
+                            form. Any reliance you place on such information is at your own risk. 5.3 We reserve the
+                            right to modify,
+                            suspend, or terminate the web form or any part of it at any time, without prior notice or
+                            liability. <br>
+                            <br>
+                            <h3>6. Governing Law </h3>
+                            <br> 6.1 These terms and conditions shall be governed by and construed in accordance with
+                            the laws of
+                            [Jurisdiction]. Any disputes arising under or in connection with these terms and conditions
+                            shall be subject
+                            to the exclusive jurisdiction of the courts of [Jurisdiction]. <br>
+                            <br> By using our donation web form, you acknowledge that you have read, understood, and
+                            agreed to these
+                            terms and conditions. If you do not agree with any part of these terms and conditions,
+                            please refrain from
+                            using the web form for making donations.<br>
+                            <br>Thank you for your generosity and support. If you have any questions or concerns
+                            regarding these terms
+                            and conditions, please contact us through the provided contact information on our website.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="image-container">
+                <!-- background image or content related to donation -->
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
