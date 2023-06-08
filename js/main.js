@@ -166,8 +166,14 @@ $(document).ready(function (){
 });*/
 
 
-/*Carrusel */
+/*Carrusel
 $(document).ready(function() {
 	$('.carousel').carousel();
   });
+*/
+
+  function redirectToThankYou() {
+	window.location.href = "thank_you.html";
+  }
+  
   
